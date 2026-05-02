@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 4.25rem;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -284,6 +288,14 @@ summary {
 
 .rec-card[open] summary {
   margin-bottom: 0.75rem;
+}
+
+.rec-card:target,
+.fact-card:target,
+.decision-card:target,
+.info-block:target {
+  border-color: rgba(20, 124, 116, 0.7);
+  box-shadow: 0 0 0 3px rgba(20, 124, 116, 0.16);
 }
 
 .booking {
